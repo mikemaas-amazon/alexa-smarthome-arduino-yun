@@ -1,0 +1,84 @@
+{
+   "event":{
+      "header":{
+         "namespace":"Alexa.Discovery",
+         "name":"Discover.Response",
+         "payloadVersion":"3",
+         "messageId":"5f8a426e-01e4-4cc9-8b79-65f8bd0fd8a4"
+      },
+      "payload":{
+         "endpoints":[
+            {
+               "endpointId":"arduino-001",
+               "friendlyName":"Test Light",
+               "description":"Sample Test Light using Arduino",
+               "manufacturerName":"Sample Manufacturer",
+               "displayCategories":[
+                  "LIGHT"
+               ],
+               "capabilities":[
+                  {
+                     "type":"AlexaInterface",
+                     "interface":"Alexa.ColorTemperatureController",
+                     "version":"3",
+                     "properties":{
+                        "supported":[
+                           {
+                              "name":"colorTemperatureInKelvin"
+                           }
+                        ],
+                        "proactivelyReported":false,
+                        "retrievable":true
+                     }
+                  },
+                  {
+                      "type": "AlexaInterface",
+                      "interface": "Alexa.PowerController",
+                      "version": "3",
+                      "properties": {
+                        "supported": [ {
+                          "name": "powerState"
+                        } ],
+                        "proactivelyReported": false,
+                        "retrievable": true
+                     }
+                  },
+                  {
+                     "type":"AlexaInterface",
+                     "interface":"Alexa",
+                     "version":"3"
+                  },
+                  {
+                     "type": "AlexaInterface",
+                     "interface": "Alexa.BrightnessController",
+                     "version": "3",
+                     "properties": {
+                     "supported": [
+                        {
+                           "name": "brightness"
+                        }
+                        ],
+                        "proactivelyReported": false,
+                        "retrievable": true
+                     }
+                  },
+                  {
+                     "type":"AlexaInterface",
+                     "interface":"Alexa.ColorController",
+                     "version":"3",
+                     "properties":{
+                        "supported":[
+                           {
+                              "name":"color"
+                           }
+                        ],
+                        "proactivelyReported":false,
+                        "retrievable":true
+                     }
+                  }
+               ]
+            }
+         ]
+      }
+   }
+}
